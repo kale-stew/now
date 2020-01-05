@@ -1,14 +1,16 @@
 {
   "name": "kale-stew-now",
   "version": "0.1.0",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kale-stew/now"
   },
+  "homepage": "https://kylieis.online/now",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "clean": "rm -rf build",
+    "deploy": "yarn clean && yarn build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -16,6 +18,9 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   },
   "eslintConfig": {
     "extends": "react-app"
