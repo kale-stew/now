@@ -1,26 +1,56 @@
 * {
-  background-color: #2f1c94;
+  background-color: #fff;
+  font-size: 15px;
+  color: #2b2b2b;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-header {
+header {
   background-image: linear-gradient(to right, #2f1c94, #cb067a);
   min-height: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
 }
 
-.App-body {
-  background-color: #fff;
-  padding: 10px 0px 0px 0px;
-  height: 90vh;
+h1 {
+  font-size: 34.5px;
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 15px;
 }
 
-.App-link {
-  color: #2f1c94;
+h3 {
+  font-size: 24px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  padding-left: 15px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+b {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #cb067a;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+a:hover {
+  border-bottom: 1.5px solid #cb067a;
+  font-style: italic;
+  margin-left: 25px;
+}
+
+footer {
+  background-image: linear-gradient(to right, #2f1c94, #cb067a);
+  min-height: 75px;
 }
