@@ -1,12 +1,13 @@
-import React from "react";
-import "./App.css";
+import React, { Fragment } from "react";
+import Footer from "./footer";
+import "./app.css";
 import * as posts from "./now.json";
 
-function App() {
+export default function App() {
   const mostRecent = posts[0];
 
   return (
-    <div>
+    <Fragment style={{ height: "100%" }}>
       <body>
         <header />
         <div className="content">
@@ -49,10 +50,8 @@ function App() {
             Visit a random "now" from the past
           </a>
         </div>
-        <footer />
+        <Footer />
       </body>
-    </div>
+    </Fragment>
   );
 }
-
-export default App;

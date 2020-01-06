@@ -17,3 +17,5 @@ All "now" posts are consumed in the following format:
   "workingOn": ""
 }
 ```
+
+Check out the [live site](https://kylieis.online/now).

@@ -14,7 +14,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.8.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
