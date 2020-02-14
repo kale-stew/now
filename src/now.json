@@ -1,6 +1,5 @@
-[
-  {
-    "date": "Sunday, January 5, 2020",
+{
+  "Sunday, January 5, 2020": {
     "location": "At home in Denver, Colorado.",
     "travel": "Next month, to the 4th Annual Formidagathering (4midagathering, if you will) in Seattle, Washington.",
     "reading": "One Hundred Names for Love: A Memoir by Diane Ackerman. A little lighter than my last, Edible Woman by Margaret Atwood.",
@@ -10,4 +9,4 @@
     "learning": "As much frontend as I can handle, primarily in React.",
     "workingOn": "Taking a more formulaic approach to new endeavors."
   }
-]
+}
