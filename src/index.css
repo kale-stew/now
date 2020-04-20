@@ -15,6 +15,19 @@ body {
 header {
   background-image: linear-gradient(to right, #2f1c94, #cb067a);
   min-height: 65px;
+  display: flex;
+  color: #ffffffd1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  @media (max-width: 1024px) {
+    justify-content: space-around;
+  }
+}
+
+.header-link {
+  color: #fff;
 }
 
 footer {
@@ -37,12 +50,12 @@ a,
 a:link,
 a:visited,
 a:active {
-  color: #cb067a;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 1.5px solid #cb067a;
+  text-decoration: underline;
+  text-decoration-color: #cb067a;
   font-style: italic;
 }
 

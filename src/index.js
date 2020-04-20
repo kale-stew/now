@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 import Footer from './components/footer';
 import { formatDate, getMostRecentDate } from './utils';
 import './index.css';
@@ -9,9 +10,28 @@ import posts from './now.json';
 const mostRecentDate = getMostRecentDate(posts);
 const mostRecentPost = posts[mostRecentDate];
 
+const HeaderTitle = styled('h3')`
+  line-height: 18px;
+  font-weight: 700;
+  padding-right: 55px;
+
+  @media (max-width: 1024px) {
+    padding-right: 15px;
+  }
+`;
+
+const StyledLink = styled('a')`
+  color: #cb067a;
+`;
+
 const App = () => (
   <body>
-    <header />
+    <header>
+      <a className="header-link" href="https://kylieis.online">
+        ← head home
+      </a>
+      <HeaderTitle>Kylie Stewart</HeaderTitle>
+    </header>
     <div className="content">
       <h1>What I'm Doing Now</h1>
       <h3>{formatDate(mostRecentDate)}</h3>
@@ -45,12 +65,14 @@ const App = () => (
       </div>
       <br />
       <br />
-      <a href="https://nownownow.com/about">What is this page?</a>
+      <StyledLink href="https://nownownow.com/about">
+        What is this page?
+      </StyledLink>
       <br />
       <br />
-      <a href="https://kylieis.online/now">
+      <StyledLink href="https://kylieis.online/now">
         Visit a random "now" from the past
-      </a>
+      </StyledLink>
     </div>
     <Footer />
   </body>
