@@ -76,5 +76,12 @@ module.exports = {
     Oct: 'October',
     Nov: 'November',
     Dec: 'December'
+  },
+  SOCIALS: {
+    Email: 'kylie@kyliestewart.tech',
+    Homepage: 'https://kylieis.online',
+    Instagram: 'https://instagram.com/kalestews',
+    LinkedIn: 'https://www.linkedin.com/in/kylieastewart/',
+    Twitter: 'https://twitter.com/kyliestew'
   }
 };

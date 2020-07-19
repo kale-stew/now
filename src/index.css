@@ -31,19 +31,21 @@ header {
 }
 
 footer {
+  background-image: linear-gradient(to right, #2f1c94, #cb067a);
+  bottom: 0;
+  position: sticky;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to right, #2f1c94, #cb067a);
-  min-height: 45px;
+  align-items: center;
+  width: 100%;
   max-height: 65px;
+  min-height: 45px;
   padding: 18px 12px;
-  position: sticky;
-  bottom: 0;
 }
 
-footer a {
-  margin-right: 12px;
-  padding-bottom: 12px;
+.footer-link {
+  color: #fff;
+  margin-right: 1rem;
 }
 
 a,

@@ -1,45 +1,37 @@
-import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
-import { withStyles } from '@material-ui/core';
+import React from 'react'
+import { SocialIcon } from 'react-social-icons'
+import { SOCIALS } from '../../constants'
 
-const images = {
-  LogoGithub: require('../../assets/github.png'),
-  LogoInstagram: require('../../assets/instagram.png'),
-  LogoLinkedIn: require('../../assets/linkedin.png'),
-  LogoMail: require('../../assets/email.png'),
-  LogoTwitter: require('../../assets/twitter.png')
-};
+const height = 33
+const width = 33
+const marginRight = '1rem'
+const bgColor = '#fff'
 
-const KsAvatar = withStyles({
-  root: {
-    background: 'transparent'
-  }
-})(Avatar);
-
-const Footer = () => (
-  <footer>
-    <a href="https://kyliestewart.tech">
-      <KsAvatar>KS</KsAvatar>
+export const Footer = () => (
+  <footer className="footer">
+    <a className="footer-link" href={SOCIALS.Homepage}>
+      <b>KS</b>
     </a>
-    <a href="https://twitter.com/kyliestew">
-      <Avatar alt="Link to Kylie's Twitter account" src={images.LogoTwitter} />
-    </a>
-    <a href="https://www.linkedin.com/in/kylieastewart/">
-      <Avatar
-        alt="Link to Kylie's LinkedIn account"
-        src={images.LogoLinkedIn}
-      />
-    </a>
-    <a href="https://instagram.com/kalestews">
-      <Avatar
-        alt="Link to Kylie's Instagram account"
-        src={images.LogoInstagram}
-      />
-    </a>
-    <a href="mailto:kylie@kyliestewart.tech">
-      <Avatar alt="Link to email Kylie" src={images.LogoMail} />
-    </a>
+    <SocialIcon
+      url={SOCIALS.Twitter}
+      bgColor={bgColor}
+      style={{ height, width, marginRight }}
+    />
+    <SocialIcon
+      url={SOCIALS.LinkedIn}
+      bgColor={bgColor}
+      style={{ height, width, marginRight }}
+    />
+    <SocialIcon
+      url={SOCIALS.Instagram}
+      bgColor={bgColor}
+      style={{ height, width, marginRight }}
+    />
+    <SocialIcon
+      url={SOCIALS.Email}
+      network="email"
+      bgColor={bgColor}
+      style={{ height, width, marginRight }}
+    />
   </footer>
-);
-
-export default Footer;
+)

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import Footer from './components/footer';
+import { Footer } from './components/footer';
 import { formatDate, getMostRecentDate } from './utils';
 import './index.css';
 
@@ -22,13 +22,18 @@ const HeaderTitle = styled('h3')`
 
 const StyledLink = styled('a')`
   color: #cb067a;
+  
+  :hover {
+    text-decoration: underline;
+    font-style: italic;
+  }
 `;
 
 const App = () => (
   <body>
     <header>
       <a className="header-link" href="https://kylieis.online">
-        ← head home
+        ← home
       </a>
       <HeaderTitle>Kylie Stewart</HeaderTitle>
     </header>
@@ -68,11 +73,11 @@ const App = () => (
       <StyledLink href="https://nownownow.com/about">
         What is this page?
       </StyledLink>
-      <br />
+      {/* <br />
       <br />
       <StyledLink href="https://kylieis.online/now">
         Visit a random "now" from the past
-      </StyledLink>
+      </StyledLink> */}
     </div>
     <Footer />
   </body>
