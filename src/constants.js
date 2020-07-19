@@ -7,8 +7,8 @@ const KEYS = {
   READING: 'reading',
   TRAVEL: 'travel',
   WATCHING: 'watching',
-  WORKING_ON: 'workingOn'
-};
+  WORKING_ON: 'workingOn',
+}
 
 module.exports = {
   FILE: './src/now.json',
@@ -16,43 +16,43 @@ module.exports = {
     {
       name: KEYS.LOCATION,
       type: 'input',
-      message: 'Current location:'
+      message: 'Current location:',
     },
     {
       name: KEYS.TRAVEL,
       type: 'input',
-      message: 'Upcoming travel:'
+      message: 'Upcoming travel:',
     },
     {
       name: KEYS.READING,
       type: 'input',
-      message: 'Currently reading:'
+      message: 'Currently reading:',
     },
     {
       name: KEYS.CELEBRATING,
       type: 'input',
-      message: 'Current or upcoming celebrations:'
+      message: 'Current or upcoming celebrations:',
     },
     {
       name: KEYS.WATCHING,
       type: 'input',
-      message: 'Currently watching:'
+      message: 'Currently watching:',
     },
     {
       name: KEYS.LISTENING_TO,
       type: 'input',
-      message: 'Currently listening to:'
+      message: 'Currently listening to:',
     },
     {
       name: KEYS.LEARNING,
       type: 'input',
-      message: 'Currently learning:'
+      message: 'Currently learning:',
     },
     {
       name: KEYS.WORKING_ON,
       type: 'input',
-      message: 'Currently working on:'
-    }
+      message: 'Currently working on:',
+    },
   ],
   DAYS: {
     Mon: 'Monday',
@@ -61,7 +61,7 @@ module.exports = {
     Thu: 'Thursday',
     Fri: 'Friday',
     Sat: 'Saturday',
-    Sun: 'Sunday'
+    Sun: 'Sunday',
   },
   MONTHS: {
     Jan: 'January',
@@ -75,13 +75,13 @@ module.exports = {
     Sep: 'September',
     Oct: 'October',
     Nov: 'November',
-    Dec: 'December'
+    Dec: 'December',
   },
   SOCIALS: {
     Email: 'kylie@kyliestewart.tech',
     Homepage: 'https://kylieis.online',
     Instagram: 'https://instagram.com/kalestews',
     LinkedIn: 'https://www.linkedin.com/in/kylieastewart/',
-    Twitter: 'https://twitter.com/kyliestew'
-  }
-};
+    Twitter: 'https://twitter.com/kyliestew',
+  },
+}

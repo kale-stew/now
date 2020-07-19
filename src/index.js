@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import { Footer } from './components/footer';
-import { formatDate, getMostRecentDate } from './utils';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import styled from 'styled-components'
+import { Footer } from './components/footer'
+import { formatDate, getMostRecentDate } from './utils'
+import './index.css'
 
-import posts from './now.json';
+import posts from './now.json'
 
-const mostRecentDate = getMostRecentDate(posts);
-const mostRecentPost = posts[mostRecentDate];
+const mostRecentDate = getMostRecentDate(posts)
+const mostRecentPost = posts[mostRecentDate]
 
 const HeaderTitle = styled('h3')`
   line-height: 18px;
@@ -18,16 +18,16 @@ const HeaderTitle = styled('h3')`
   @media (max-width: 1024px) {
     padding-right: 15px;
   }
-`;
+`
 
 const StyledLink = styled('a')`
   color: #cb067a;
-  
+
   :hover {
     text-decoration: underline;
     font-style: italic;
   }
-`;
+`
 
 const App = () => (
   <body>
@@ -81,6 +81,6 @@ const App = () => (
     </div>
     <Footer />
   </body>
-);
+)
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
